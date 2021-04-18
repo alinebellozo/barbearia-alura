@@ -4,44 +4,79 @@
     
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=devide-width"> <!--tag para adaptar o site ao dispositivo-->
         <title>Barbearia Alura</title>
-        <link rel="stylesheet" href="style-home.css">           
+
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">       
     </head>
 
     <body>
 
         <header>
-            <h1 class="tituloprincipal">Barbearia Alura</h1>
+            <section class="caixa">
+                <h1><img src="logo.png"></h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </section>
         </header>
+
+        <img class="banner" src="banner.jpg">
         
-        <img id="banner" src="banner.jpg">
-        <div class="principal">
+        <main>
+            <section class="principal"> <!--div é só uma divisão visual; section é uma divisão em que o conteúdo semântico está "junto"-->
 
-            <h2 class="titulocentralizado">Sobre a Barbearia Alura</h2>
+                <h2 class="titulo-principal">Sobre a Barbearia Alura</h2>
 
-            <p>Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de melhor para o seu cabelo e barba. 
-            Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia.</p>
+                <img class="utensilios" src="utensilios.jpg" alt="Utensílios de um barbeiro"> 
 
-            <p id="missao"><em>Nossa missão é: <strong>"Proporcionar autoestima e qualidade de vida aos clientes"</strong>.</em></p>
+                <p>Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de melhor para o seu cabelo e barba. 
+                Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia.</p>
 
-            <p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. 
-            O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
+                <p id="missao"><em>Nossa missão é: <strong>"Proporcionar autoestima e qualidade de vida aos clientes"</strong>.</em></p>
 
-        </div>
+                <p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. 
+                O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
+            </section>
 
-        <div class="beneficios">
-        <h3 class="titulocentralizado">Benefícios</h3>
+            <section class="mapa">
+                <h3 class="titulo-principal">Nosso estabelecimento</h3>
+                <p>Nosso estabelecimento está localizado no coração da cidade.</p>
+                
+                <div class="mapa-conteudo">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7503096.169822856!2d-50.088677538138626!3d-23.329499576623753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a2b2ed7f3a1%3A0xab35da2f5ca62674!2sCaelum%20-%20Escola%20de%20Tecnologia!5e0!3m2!1spt-BR!2sbr!4v1618757388636!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </section>
 
-            <ul>
-                <li class="itens">Atendimento ao cliente</li>
-                <li class="itens">Espaço diferenciado</li>
-                <li class="itens">Localização</li>
-                <li class="itens">Profissionais qualificados</li>
-            </ul>
+        </main>
 
-        <img src="beneficios.jpg" class="imagembeneficios">
+        <section class="beneficios">
+        <h3 class="titulo-principal">Benefícios</h3>
+            <div class="conteudo-beneficios">
+                <ul class="lista-beneficios">
+                    <li class="itens">Atendimento ao cliente</li>
+                    <li class="itens">Espaço diferenciado</li>
+                    <li class="itens">Localização</li>
+                    <li class="itens">Profissionais qualificados</li>
+                    <li class="itens">Pontualidade</li>
+                    <li class="itens">Limpeza</li>
+                </ul><img src="beneficios.jpg" class="imagem-beneficios">
+            </div>
         
+        <div class="video">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/wcVVXUV0YUY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
+    
+        </section>
+        <footer>
+            <img src="logo-branco.png" alt="Logo da Barbearia Alura">
+            <p class="copyright">&copy; Copyright Barbearia Alura - 2019</p>
+        </footer>
     </body>
-
 </html>
